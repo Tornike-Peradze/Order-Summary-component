@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+/*
+ Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Outfit&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+  ========================================
+  Body and background image 
+  ========================================
+*/
+
+body{
+    background-color: #E0E8FF;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+  ========================================
+    Main div styles 
+  ========================================
+*/
+
+.main {
+    background-color: white;
+    width: 450px;
+    height: 697px;
+    border-radius: 20px;
+    position: relative;
+    }
+
+/*
+  ========================================
+    pic1, h1, p1 - styles 
+  ========================================
+*/
+
+.pic1{
+    width: 450px;
+    height: 220px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.h1{
+    width: 354px;
+    margin: auto;
+    margin-top: 45px;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37px;
+    text-align: center;
+    color: #1F2E55;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.p1{
+    width: 354px;
+    margin:auto;  
+    margin-top: 17px;
+}
+
+p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #717FA6;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/*
+  ========================================
+    From here starts middle class and it's child elements stylying 
+  ========================================
+*/
+
+.middle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 354px;
+  height: 98px;
+  background: #F7F9FF;
+  border-radius: 11px;
+  position: relative;
+  margin: 20px 48px 32px;
+  cursor: pointer;
+}
+
+.middle:hover{
+  background-color: #87CEEB;
+}
+
+.music{
+  position: absolute;
+  top: 25px;
+  left: 24px;
+  bottom: 25px; 
+  right: 282px;
+  cursor: pointer;
+}
+
+.music:hover{
+  transform: rotate(360deg);
+}
+
+h3{
+  position: absolute;
+  top: 25px;
+  left: 92px;
+  bottom: 52px;
+  right: 145px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 21px;
+  color:  #1F2E55;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.price{
+  position: absolute;
+  top: 52px;
+  bottom: 25px;
+  left: 92px;
+  right: 170px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #717FA6;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+h4{
+  position: absolute;
+  top: 40px;
+  right: 24px;
+  bottom: 39px;
+  left: 278px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #382AE1;
+  font-family: 'Red Hat Display', sans-serif;
+  cursor: pointer;
+}
+
+h4:hover{
+  color: #766CF1;
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+/*
+  ========================================
+    From here starts payment and cancel order objects styles 
+  ========================================
+*/
+
+.payment{
+  background: #382AE1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+  width: 354px;
+  height: 50px;
+  position: absolute;
+  bottom: 100px;
+  left: 48px;
+  right: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-family: 'Red Hat Display', sans-serif;
+  cursor: pointer;
+}
+
+.payment:hover{
+  background:  #766CF1;
+  font-size: 110%;
+}
+
+.cancel{
+  position: absolute;
+  bottom: 48px;
+  left: 176px;
+  margin-top: 32px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: #717FA6; 
+  font-family: 'Red Hat Display', sans-serif;
+  cursor: pointer;
+}
+
+.cancel:hover{
+  color: #1F2E55;
+  transform: scale(1.5);
+  transform-origin: center;
+}
